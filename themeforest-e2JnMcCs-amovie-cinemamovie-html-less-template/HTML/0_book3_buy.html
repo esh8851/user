@@ -3,7 +3,7 @@
 <head>
 	<!-- Basic Page Needs -->
         <meta charset="utf-8">
-        <title>AMovie - Login</title>
+        <title>AMovie - Booking step 3</title>
         <meta name="description" content="A Template by Gozha.net">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Gozha.net">
@@ -138,8 +138,8 @@
                 
                 <!-- Additional header buttons / Auth and direct link to booking-->
                 <div class="control-panel">
-                    <a href="#" class="btn btn--sign">Sign in</a>
-                    <a href="#" class="btn btn-md btn--warning btn--book">Book a ticket</a>
+                    <a href="#" class="btn btn--sign login-window">Sign in</a>
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">Book a ticket</a>
                 </div>
 
             </div>
@@ -163,35 +163,96 @@
         </div>
         
         <!-- Main content -->
-                <form id="login-form" class="login" method='get' novalidate=''>
-                    <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
+        <section class="container">
+            <div class="order-container">
+                <div class="order">
+                    <img class="order__images" alt='' src="images/tickets.png">
+                    <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie time</span></p>
+                    <div class="order__control">
+                        <a href="#" class="order__control-btn active">Purchase</a>
+                        <a href="0_book3_reserve.html" class="order__control-btn">Reserve</a>
+                    </div>
+                </div>
+            </div>
+                <div class="order-step-area">
+                    <div class="order-step first--step order-step--disable ">1. What &amp; Where &amp; When</div>
+                    <div class="order-step second--step order-step--disable">2. Choose a sit</div>
+                    <div class="order-step third--step">3. Check out</div>
+                </div>
 
-                    <div class="social social--colored">
-                            <a href='#' class="social__variant fa fa-facebook"></a>
-                            <a href='#' class="social__variant fa fa-twitter"></a>
-                            <a href='#' class="social__variant fa fa-tumblr"></a>
+            <div class="col-sm-12">
+                <div class="checkout-wrapper">
+                    <h2 class="page-heading">price</h2>
+                    <ul class="book-result">
+                        <li class="book-result__item">Tickets: <span class="book-result__count booking-ticket">3</span></li>
+                        <li class="book-result__item">One item price: <span class="book-result__count booking-price">$20</span></li>
+                        <li class="book-result__item">Total: <span class="book-result__count booking-cost">$60</span></li>
+                    </ul>
+
+                    <h2 class="page-heading">Choose payment method</h2>
+                    <div class="payment">
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay1.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay2.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay3.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay4.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay5.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay6.png">
+                        </a>
+                        <a href="#" class="payment__item">
+                            <img alt='' src="images/payment/pay7.png">
+                        </a>
                     </div>
 
-                    <p class="login__tracker">or</p>
-                    
-                    <div class="field-wrap">
-                    <input type='email' placeholder='Email' name='user-email' class="login__input">
-                    <input type='password' placeholder='Password' name='user-password' class="login__input">
+                    <h2 class="page-heading">Contact information</h2>
+            
+                    <form id='contact-info' method='post' novalidate="" class="form contact-info">
+                        <div class="contact-info__field contact-info__field-mail">
+                            <input type='email' name='user-mail' placeholder='Your email' class="form__mail">
+                        </div>
+                        <div class="contact-info__field contact-info__field-tel">
+                            <input type='tel' name='user-tel' placeholder='Phone number' class="form__mail">
+                        </div>
+                    </form>
 
-                    <input type='checkbox' id='#informed' class='login__check styled'>
-                    <label for='#informed' class='login__check-info'>remember me</label>
-                     </div>
-                    
-                    <div class="login__control">
-                        <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
-                        <a href="#" class="login__tracker form__tracker">Forgot password?</a>
-                    </div>
-                </form>
+                
+                </div>
+                
+                <div class="order">
+                    <a href="0_bookFinal.html" class="btn btn-md btn--warning btn--wide">purchase</a>
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <div class="clearfix"></div>
+
+        <div class="booking-pagination">
+                <a href="0_book2.html" class="booking-pagination__prev">
+                    <p class="arrow__text arrow--prev">prev step</p>
+                    <span class="arrow__info">choose a sit</span>
+                </a>
+                <a href="#" class="booking-pagination__next hide--arrow">
+                    <p class="arrow__text arrow--next">next step</p>
+                    <span class="arrow__info"></span>
+                </a>
+        </div>
         
         <div class="clearfix"></div>
-    </div>
 
-    <footer class="footer-wrapper footer-wrapper--mod">
+        <footer class="footer-wrapper">
             <section class="container">
                 <div class="col-xs-4 col-md-2 footer-nav">
                     <ul class="nav-link">
@@ -236,6 +297,43 @@
                 </div>
             </section>
         </footer>
+    </div>
+
+    <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            
+            <section class="container">
+
+                <div class="col-sm-4 col-sm-offset-4">
+                    <button type="button" class="overlay-close">Close</button>
+                    <form id="login-form" class="login" method='get' novalidate=''>
+                        <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
+
+                        <div class="social social--colored">
+                                <a href='#' class="social__variant fa fa-facebook"></a>
+                                <a href='#' class="social__variant fa fa-twitter"></a>
+                                <a href='#' class="social__variant fa fa-tumblr"></a>
+                        </div>
+
+                        <p class="login__tracker">or</p>
+                        
+                        <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                         </div>
+                        
+                        <div class="login__control">
+                            <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+                            <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
 
 	<!-- JavaScript-->
         <!-- jQuery 3.1.1--> 
@@ -250,6 +348,7 @@
         <script src="js/jquery.mobile.menu.js"></script>
          <!-- Select -->
         <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+
         <!-- Form element -->
         <script src="js/external/form-element.js"></script>
         <!-- Form validation -->
@@ -257,7 +356,6 @@
 
         <!-- Custom -->
         <script src="js/custom.js"></script>
-        
 
 </body>
 </html>
