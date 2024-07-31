@@ -1,1 +1,16 @@
-.paginatioon--full .paginatioon-sh{display:inline-block;}
+.radio {width:13px;height:13px;border:1px solid #e0e4e6;display:block;clear:left;float:left;border-radius:3px;-moz-box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);-webkit-box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);background-image:url('../images/components/checked.png');background-position:0 0;margin-right:10px;margin-top:3px;}
+.copy{padding-bottom:0;}
+
+.d-flex {display: flex;}
+
+.radiobox-leesh{margin:5px 0;}
+.radiobox-leesh .login__check-info{margin-right:13px;margin-bottom:0;}
+.radiobox-leesh .login__check-info > span{margin-top:2px;}
+
+.pagination-leesh{font:13px 'aleoregular', sans-serif;color:#4c4145;text-transform:uppercase;justify-content:center;}
+.pagination-leesh li {border:1px solid #4c4145;cursor: pointer;padding:11px 17px;}
+.pagination-leesh li:nth-of-type(1){border-radius:3px 0 0 3px;}
+.pagination-leesh li:nth-of-type(5) {border-radius:0 3px 3px 0;}
+.pagination-leesh li:not(:last-child){border-right:0;}
+.pagination-leesh li:hover{background-color:#f0ebec;}
+.pagination-leesh li:hover a{color: #FE505A;}
