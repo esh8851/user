@@ -4,7 +4,7 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>AMovie - Login</title>
+    <title>AMovie</title>
     <meta name="description" content="A Template by Gozha.net">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Gozha.net">
@@ -17,7 +17,9 @@
     <!-- Font awesome - icon font -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Roboto -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+    <!-- Open Sans -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets -->
 
@@ -26,6 +28,11 @@
     <!-- Select -->
     <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
 
+    <!-- Slider Revolution CSS Files -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.csslo">
+
     <!-- Custom -->
     <link href="css/style.css?v=1" rel="stylesheet" />
 
@@ -33,10 +40,12 @@
     <script src="js/external/modernizr.custom.js"></script>
 
     <!-- 0_style.css -->
-     <link rel="stylesheet" href="css/0_style.css">
-
+    <link rel="stylesheet" href="css/0_style.css">
+    
     <!-- Favicon -->
-     <link rel="icon" href="0_images/img-cat.jpg">
+    <link rel="icon" href="0_images/favicon/img-cat.jpg">
+
+
 </head>
 
 <body>
@@ -47,7 +56,7 @@
         </div> -->
 
         <!-- Header section -->
-        <header class="header-wrapper">
+        <header class="header-wrapper header-wrapper--home">
             <div class="container">
                 <!-- Logo link-->
                 <a href='0_index.html' class="logo">
@@ -167,107 +176,70 @@
 
                 <!-- Additional header buttons / Auth and direct link to booking-->
                 <div class="control-panel">
-                    <a href="#" class="btn btn--sign">Sign in</a>
-                    <a href="#" class="btn btn-md btn--warning btn--book">Book a ticket</a>
+                    <div class="auth auth--home">
+                        <div class="auth__show">
+                            <span class="auth__image">
+                                <img alt="" src="images/client-photo/auth.png">
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn--sign btn--singin">
+                            me
+                        </a>
+                        <ul class="auth__function">
+                            <li><a href="#" class="auth__function-item">Watchlist</a></li>
+                            <li><a href="#" class="auth__function-item">Booked tickets</a></li>
+                            <li><a href="#" class="auth__function-item">Discussion</a></li>
+                            <li><a href="#" class="auth__function-item">Settings</a></li>
+                        </ul>
+
+                    </div>
+                    <a href="#" class="btn btn-md btn--warning btn--book btn-control--home login-window">Book a
+                        ticket</a>
                 </div>
 
             </div>
         </header>
 
-        <!-- Search bar -->
-        <div class="search-wrapper">
-            <div class="container container--add">
-                <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
-                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
-                        <option value="1" selected='selected'>By title</option>
-                        <option value="2">By year</option>
-                        <option value="3">By producer</option>
-                        <option value="4">By title</option>
-                        <option value="5">By year</option>
-                    </select>
-                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
-                </form>
-            </div>
-        </div>
-
         <!-- Main content -->
-        <form id="login-form" class="login" method='get' novalidate=''>
-            <p class="login__title">sign up <br><span class="login-edition">welcome to A.Movie</span></p>
-
-            <div class="social social--colored">
-                <a href='#' class="social__variant fa fa-facebook"></a>
-                <a href='#' class="social__variant fa fa-twitter"></a>
-                <a href='#' class="social__variant fa fa-tumblr"></a>
-            </div>
-
-            <p class="login__tracker">or</p>
-
-            <div class="field-wrap">
-                <input type="text" placeholder='이름' name='user-name' class="login__input">
-                <div class="d-flex radiobox-leesh">
-                    <label for="radio01" class='login__check-info'>
-                        <input type="radio" id="radio01" class="login__check styled" name="gender">
-                        <span>남자</span>
-                    </label>
-                    <label for="radio02" class='login__check-info'>
-                        <input type="radio" id="radio02" class="login__check styled" name="gender">
-                        <span>여자</span>
-                    </label>
-                </div>
-                <input type="text" placeholder='아이디' name='user-id' class="login__input">
-                <input type='password' placeholder='비밀번호' name='user-password' class="login__input">
-                <input type='password' placeholder='비밀번호 확인' name='user-password-check' class="login__input">
-                <input type="date" class="login__input">
-                <input type='checkbox' id='#informed' class='login__check styled'>
-                <label for='#informed' class='login__check-info'>remember me</label>
-            </div>
-
-            <div class="login__control">
-                <button type='submit' class="btn btn-md btn--warning btn--wider">sign up</button>
-                <a href="#" class="login__tracker form__tracker">Forgot password?</a>
-            </div>
-        </form>
-
-        <div class="clearfix"></div>
+        <a href="#" class="btn btn-md btn--warning btn--book btn-control--home login-window" style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);">Book a
+            ticket</a>
     </div>
 
-    <footer class="footer-wrapper">
+    <!-- open/close -->
+    <div class="overlay overlay-hugeinc">
+
         <section class="container">
-            <div class="col-xs-4 col-md-3 footer-nav">
-                <ul class="nav-link">
-                    <li><a href="0_concertList.html" class="nav-link__item">Concert</a></li>
-                    <li><a href="0_hallList.html" class="nav-link__item">ConcertHall</a></li>
-                    <li><a href="0_gallery.html" class="nav-link__item">Gallery</a></li>
 
-                </ul>
-            </div>
-            <div class="col-xs-4 col-md-3 footer-nav">
-                <ul class="nav-link">
-                    <li><a href="0_news.html" class="nav-link__item">News</a></li>
-                    <li><a href="0_rates.html" class="nav-link__item">Rates</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="footer-info">
-                    <p class="heading-special--small">A.Movie<br><span class="title-edition">in the social
-                            media</span></p>
+            <div class="col-sm-4 col-sm-offset-4">
+                <button type="button" class="overlay-close">Close</button>
+                <form id="login-form" class="login" method='get' novalidate=''>
+                    <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
 
-                    <div class="social">
+                    <div class="social social--colored">
                         <a href='#' class="social__variant fa fa-facebook"></a>
                         <a href='#' class="social__variant fa fa-twitter"></a>
-                        <a href='#' class="social__variant fa fa-vk"></a>
-                        <a href='#' class="social__variant fa fa-instagram"></a>
                         <a href='#' class="social__variant fa fa-tumblr"></a>
-                        <a href='#' class="social__variant fa fa-pinterest"></a>
                     </div>
 
-                    <div class="clearfix"></div>
-                    <p class="copy">&copy; A.Movie, 2013. All rights reserved. Done by Olia Gozha</p>
-                </div>
+                    <p class="login__tracker">or</p>
+
+                    <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                    </div>
+
+                    <div class="login__control">
+                        <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+                        <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+                    </div>
+                </form>
             </div>
+
         </section>
-    </footer>
+    </div>
 
     <!-- JavaScript-->
     <!-- jQuery 3.1.1-->
@@ -278,18 +250,44 @@
     <!-- Bootstrap 3-->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
+    <!-- Slider Revolution core JavaScript files -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Slider Revolution extension scripts. -->
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
     <!-- Mobile menu -->
     <script src="js/jquery.mobile.menu.js"></script>
     <!-- Select -->
     <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+    <!-- Stars rate -->
+    <script src="js/external/jquery.raty.js"></script>
+
     <!-- Form element -->
     <script src="js/external/form-element.js"></script>
     <!-- Form validation -->
     <script src="js/form.js"></script>
 
+    <!-- Twitter feed -->
+    <script src="js/external/twitterfeed.js"></script>
+
     <!-- Custom -->
     <script src="js/custom.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init_Home();
+        });
+    </script>
 
 </body>
 
