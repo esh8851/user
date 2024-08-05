@@ -4,12 +4,26 @@
 .d-flex {display:flex;}
 .nav-link{margin-top:31px;}
 .footer-info{padding-top:31px;}
+.page-heading, .movie__time{font-weight:bold;}
 
+/******************************* concertList S *******************************/
 .radiobox-leesh{margin:5px 0;}
 .radiobox-leesh .login__check-info{margin-right:13px;margin-bottom:0;}
 .radiobox-leesh .login__check-info > span{margin-top:2px;}
 .movie--preview .movie__feature .movie__feature--photo:before{right:7px;}
+.tags-area ul .item-wrap{margin-top:2px;}
+.elect--cinema .sbSelector{min-width:100px;}
+.sbToggle:after{word-break:keep-all;}
+.select-area .select:nth-of-type(1) .sbToggle:after{content:'도시';}
+.select--cinema .sbToggle:after{content:'공연장';}
+.select--film-category .sbToggle:after{content:'카테고리';}
+.movie__feature a:before{right:5px !important;}
+.movie--full .movie__feature .movie__feature-item{text-align:right;}
+.sbHolder{padding-top:1px;}
+/******************************* concertList E *******************************/
 
+
+/******************************* concertSingle S *******************************/
 .pagination-leesh{justify-content:center;}
 .pagination-leesh li a{border:1px solid #4c4145;padding:11px 17px;}
 .pagination-leesh li:first-child a{border-radius:3px 0 0 3px;}
@@ -17,3 +31,8 @@
 .pagination-leesh li a:hover span{color:#fe505a;transition:0.3s;}
 .pagination-leesh li:not(:last-child) a{border-right:0;}
 .pagination-leesh span{font:13px 'aleoregular', sans-serif;color:#4c4145;text-transform:uppercase;}
+
+.movie .movie__rating{padding-top:12px;}
+.select .sbToggle:after{content:'도시';}
+.time-select__place, .comment-form__btn, .watchlist{font-weight:bold;}
+/******************************* concertSingle E *******************************/
