@@ -5,18 +5,21 @@
 .nav-link{margin-top:31px;}
 .footer-info{padding-top:31px;}
 .page-heading, .movie__time{font-weight:bold;}
+.btn--book, .btn--sign{font-weight:bold;}
 
 /******************************* index S *******************************/
-.movie-best .movie-best__rating, .movie-best .movie-best__check, .btn-control--home{font-weight:bold;;}
+.movie-best .movie-best__rating, .movie-best .movie-best__check, .select__btn .btn-md, .slider--btn{font-weight:bold;;}
 .mega-select .mega-select__filter:after{display:none;}
 .select__btn a:visited{color:#fff;}
-.select__btn{min-width:100px;}
-.select__btn .btn-md, .slider--btn{font-weight:bold;}
-#navigation li:hover{background-color:#00aeef;border-radius:3px 3px 0 0;cursor:pointer;transition:0.3s;}
-#navigation li:hover a{color:#fff;}
-#navigation li a{color:#fff;}
-.header-wrapper--home{background-color:transparent;top:30px;}
+.btn--sign:before{left:14px;}
 /******************************* index E *******************************/
+
+
+/******************************* index S *******************************/
+.search .search__button{min-width:100px;height:37px;font-weight:bold;padding-top:9px;}
+.search .sbHolder .sbToggle:before{left:40px;}
+/******************************* index E *******************************/
+
 
 /******************************* concertList S *******************************/
 .radiobox-leesh{margin:5px 0;}
@@ -47,4 +50,15 @@
 .movie .movie__rating{padding-top:12px;}
 .choose-container .select .sbToggle:after{content:'도시';}
 .time-select__place, .comment-form__btn, .watchlist{font-weight:bold;}
+
+.movie .movie__btns .watchlist, .watchlist--map{padding-top:7px;}
 /******************************* concertSingle E *******************************/
+
+/******************************* book S *******************************/
+.order .order__title, .order-step-area .first--step, .booking-pagination .arrow__text, .booking-pagination .arrow__info, .order-step-area .second--step, .order-step-area .order-step{font-weight:bold;}
+.time-select .time-select__place{max-width:230px;}
+.time-select .time-select__group:after, .time-select .time-select__group:before{height:100%;}
+.btn--wide{font-weight:bold;}
+.ticket .ticket__film{margin-bottom:10px;padding-bottom:0;}
+.ticket .ticket__film .ticket__movie{display:inline-block;max-height:110px;overflow:hidden;text-overflow:ellipsis;}
+/******************************* book E *******************************/

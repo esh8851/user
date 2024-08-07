@@ -171,8 +171,8 @@
                 
                 <!-- Additional header buttons / Auth and direct link to booking-->
                 <div class="control-panel">
-                    <a href="#" class="btn btn--sign login-window">Sign in</a>
-                    <a href="#" class="btn btn-md btn--warning btn--book login-window">Book a ticket</a>
+                    <a href="#" class="btn btn--sign login-window">회원가입</a>
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">티켓 예매</a>
                 </div>
 
             </div>
@@ -182,15 +182,13 @@
         <div class="search-wrapper">
             <div class="container container--add">
                 <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
+                    <input type="text" class="search__field" placeholder="찾기">
                     <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
-                        <option value="1" selected='selected'>By title</option>
-                        <option value="2">By year</option>
-                        <option value="3">By producer</option>
-                        <option value="4">By title</option>
-                        <option value="5">By year</option>
+                        <option value="1" selected='selected'>콘서트</option>
+                        <option value="2">가수</option>
+                        <option value="3">장르</option>
                     </select>
-                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
+                    <button type='submit' class="btn btn-md btn--danger search__button">콘서트 검색</button>
                 </form>
             </div>
         </div>
@@ -200,29 +198,29 @@
             <div class="order-container">
                 <div class="order">
                     <img class="order__images" alt='' src="images/tickets.png">
-                    <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie time</span></p>
+                    <p class="order__title">티켓 예매 <br><span class="order__descript">신나는 콘서트</span></p>
                     <div class="order__control">
-                        <a href="#" class="order__control-btn active">Purchase</a>
-                        <a href="0_book3_reserve.html" class="order__control-btn">Reserve</a>
+                        <a href="#" class="order__control-btn active">구입</a>
+                        <a href="0_book3_reserve.html" class="order__control-btn">예약</a>
                     </div>
                 </div>
             </div>
-                <div class="order-step-area">
-                    <div class="order-step first--step order-step--disable ">1. What &amp; Where &amp; When</div>
-                    <div class="order-step second--step order-step--disable">2. Choose a sit</div>
-                    <div class="order-step third--step">3. Check out</div>
-                </div>
+            <div class="order-step-area">
+                <div class="order-step first--step order-step--disable ">1. 콘서트 &amp; 장소 &amp; 시간</div>
+                <div class="order-step second--step order-step--disable">2. 좌석 선택</div>
+                <div class="order-step third--step">3. 체크아웃</div>
+            </div>
 
             <div class="col-sm-12">
                 <div class="checkout-wrapper">
-                    <h2 class="page-heading">price</h2>
+                    <h2 class="page-heading">가격</h2>
                     <ul class="book-result">
-                        <li class="book-result__item">Tickets: <span class="book-result__count booking-ticket">3</span></li>
-                        <li class="book-result__item">One item price: <span class="book-result__count booking-price">$20</span></li>
-                        <li class="book-result__item">Total: <span class="book-result__count booking-cost">$60</span></li>
+                        <li class="book-result__item">티켓: <span class="book-result__count booking-ticket">3</span></li>
+                        <li class="book-result__item">개당 가격: <span class="book-result__count booking-price">$20</span></li>
+                        <li class="book-result__item">총합: <span class="book-result__count booking-cost">$60</span></li>
                     </ul>
 
-                    <h2 class="page-heading">Choose payment method</h2>
+                    <h2 class="page-heading">결제 방법 선택</h2>
                     <div class="payment">
                         <a href="#" class="payment__item">
                             <img alt='' src="images/payment/pay1.png">
@@ -247,14 +245,14 @@
                         </a>
                     </div>
 
-                    <h2 class="page-heading">Contact information</h2>
+                    <h2 class="page-heading">연락처 정보</h2>
             
                     <form id='contact-info' method='post' novalidate="" class="form contact-info">
                         <div class="contact-info__field contact-info__field-mail">
-                            <input type='email' name='user-mail' placeholder='Your email' class="form__mail">
+                            <input type='email' name='user-mail' placeholder='이메일' class="form__mail">
                         </div>
                         <div class="contact-info__field contact-info__field-tel">
-                            <input type='tel' name='user-tel' placeholder='Phone number' class="form__mail">
+                            <input type='tel' name='user-tel' placeholder='휴대전화' class="form__mail">
                         </div>
                     </form>
 
@@ -262,7 +260,7 @@
                 </div>
                 
                 <div class="order">
-                    <a href="0_bookFinal.html" class="btn btn-md btn--warning btn--wide">purchase</a>
+                    <a href="0_bookFinal.html" class="btn btn-md btn--warning btn--wide">구입</a>
                 </div>
 
             </div>
@@ -274,11 +272,11 @@
 
         <div class="booking-pagination">
                 <a href="0_book2.html" class="booking-pagination__prev">
-                    <p class="arrow__text arrow--prev">prev step</p>
-                    <span class="arrow__info">choose a sit</span>
+                    <p class="arrow__text arrow--prev">이전 단계</p>
+                    <span class="arrow__info">좌석 선택</span>
                 </a>
                 <a href="#" class="booking-pagination__next hide--arrow">
-                    <p class="arrow__text arrow--next">next step</p>
+                    <p class="arrow__text arrow--next">다음 단계</p>
                     <span class="arrow__info"></span>
                 </a>
         </div>

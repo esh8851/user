@@ -171,8 +171,8 @@
                 
                 <!-- Additional header buttons / Auth and direct link to booking-->
                 <div class="control-panel">
-                    <a href="#" class="btn btn--sign login-window">Sign in</a>
-                    <a href="#" class="btn btn-md btn--warning btn--book login-window">Book a ticket</a>
+                    <a href="#" class="btn btn--sign login-window">회원가입</a>
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">티켓 예매</a>
                 </div>
 
             </div>
@@ -182,15 +182,13 @@
         <div class="search-wrapper">
             <div class="container container--add">
                 <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
+                    <input type="text" class="search__field" placeholder="찾기">
                     <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
-                        <option value="1" selected='selected'>By title</option>
-                        <option value="2">By year</option>
-                        <option value="3">By producer</option>
-                        <option value="4">By title</option>
-                        <option value="5">By year</option>
+                        <option value="1" selected='selected'>콘서트</option>
+                        <option value="2">가수</option>
+                        <option value="3">장르</option>
                     </select>
-                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
+                    <button type='submit' class="btn btn-md btn--danger search__button">콘서트 검색</button>
                 </form>
             </div>
         </div>
@@ -201,32 +199,32 @@
             <div class="order-container">
                 <div class="order">
                     <img class="order__images" alt='' src="images/tickets.png">
-                    <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie time</span></p>
+                    <p class="order__title">티켓 예매 <br><span class="order__descript">신나는 콘서트</span></p>
                     <div class="order__control">
-                        <a href="#" class="order__control-btn active">Purchase</a>
-                        <a href="#" class="order__control-btn">Reserve</a>
+                        <a href="#" class="order__control-btn active">구입</a>
+                        <a href="#" class="order__control-btn">예약</a>
                     </div>
                 </div>
             </div>
                 <div class="order-step-area">
-                    <div class="order-step first--step order-step--disable ">1. What &amp; Where &amp; When</div>
-                    <div class="order-step second--step">2. Choose a sit</div>
+                    <div class="order-step first--step order-step--disable ">1. 콘서트 &amp; 장소 &amp; 시간</div>
+                    <div class="order-step second--step">2. 좌석 선택</div>
                 </div>
             
             <div class="choose-sits">
                 <div class="choose-sits__info choose-sits__info--first">
                     <ul>
-                        <li class="sits-price marker--none"><strong>Price</strong></li>
-                        <li class="sits-price sits-price--cheap">$10</li>
-                        <li class="sits-price sits-price--middle">$20</li>
-                        <li class="sits-price sits-price--expensive">$30</li>
+                        <li class="sits-price marker--none"><strong>가격</strong></li>
+                        <li class="sits-price sits-price--cheap">12,0000</li>
+                        <li class="sits-price sits-price--middle">24,0000</li>
+                        <li class="sits-price sits-price--expensive">36,0000</li>
                     </ul>
                 </div>
 
                 <div class="choose-sits__info">
                     <ul>
-                        <li class="sits-state sits-state--not">Not available</li>
-                        <li class="sits-state sits-state--your">Your choice</li>
+                        <li class="sits-state sits-state--not">불가</li>
+                        <li class="sits-state sits-state--your">선택</li>
                     </ul>
                 </div>
                 
@@ -560,12 +558,12 @@
 
             <div class="booking-pagination booking-pagination--margin">
                     <a href="0_book.html" class="booking-pagination__prev">
-                        <span class="arrow__text arrow--prev">prev step</span>
-                        <span class="arrow__info">what&amp;where&amp;when</span>
+                        <span class="arrow__text arrow--prev">이전 단계</span>
+                        <span class="arrow__info">콘서트&amp;장소&amp;시간</span>
                     </a>
                     <a href="0_book3_buy.html" class="booking-pagination__next">
-                        <span class="arrow__text arrow--next">next step</span>
-                        <span class="arrow__info">checkout</span>
+                        <span class="arrow__text arrow--next">다음 단계</span>
+                        <span class="arrow__info">체크아웃</span>
                     </a>
             </div>
         </form>
