@@ -5,19 +5,27 @@
 .nav-link{margin-top:31px;}
 .footer-info{padding-top:31px;}
 .page-heading, .movie__time{font-weight:bold;}
-.btn--book, .btn--sign{font-weight:bold;}
+.btn--book, .btn--sign, .login .login__title{font-weight:bold;}
+.login__control .btn{font-weight: bold;}
+
 
 /******************************* index S *******************************/
 .movie-best .movie-best__rating, .movie-best .movie-best__check, .select__btn .btn-md, .slider--btn{font-weight:bold;;}
-.mega-select .mega-select__filter:after{display:none;}
+.mega-select .mega-select__filter:after{width:48px;bottom:-7px;}
 .select__btn a:visited{color:#fff;}
-.btn--sign:before{left:14px;}
+.btn--sign:before{left:7px;}
+.mega-select .select__btn a{min-width:100px;}
 /******************************* index E *******************************/
+
+/******************************* login S *******************************/
+
+/******************************* login E *******************************/
 
 
 /******************************* index S *******************************/
 .search .search__button{min-width:100px;height:37px;font-weight:bold;padding-top:9px;}
 .search .sbHolder .sbToggle:before{left:40px;}
+.movie-best + .col-sm-12{margin-top:100px;}
 /******************************* index E *******************************/
 
 
@@ -31,8 +39,8 @@
 .sbToggle:after{word-break:keep-all;}
 .select-area .select:nth-of-type(1) .sbToggle:after{content:'도시';}
 .select--cinema .sbToggle:after{content:'공연장';}
-.select--film-category .sbToggle:after{content:'카테고리';}
-.movie__feature a:before{right:5px !important;}
+.select--film-category .sbToggle:after{content:'장르';}
+.movie__feature a:before{top:22px !important;right:5px !important;}
 .movie--full .movie__feature .movie__feature-item{text-align:right;}
 .sbHolder{padding-top:1px;}
 /******************************* concertList E *******************************/
@@ -52,6 +60,8 @@
 .time-select__place, .comment-form__btn, .watchlist{font-weight:bold;}
 
 .movie .movie__btns .watchlist, .watchlist--map{padding-top:7px;}
+.movie .comment-link{font-weight:bold;}
+.movie .comment-link:after{bottom:-5px;}
 /******************************* concertSingle E *******************************/
 
 /******************************* book S *******************************/
@@ -61,4 +71,13 @@
 .btn--wide{font-weight:bold;}
 .ticket .ticket__film{margin-bottom:10px;padding-bottom:0;}
 .ticket .ticket__film .ticket__movie{display:inline-block;max-height:110px;overflow:hidden;text-overflow:ellipsis;}
+.time-select .items-wrap{margin:0;padding:15px 0;}
+.ticket-primery{height:100%;margin-top:0;}
 /******************************* book E *******************************/
+
+
+/******************************* ticketBuy S *******************************/
+.first-line{margin-right:100px;}
+.second-line{border-left:1px solid #dbdee1;margin-right:100px;padding-left:100px;}
+.third-line{border-left: 1px solid #dbdee1;padding-left: 100px;}
+/******************************* ticketBuy E *******************************/
