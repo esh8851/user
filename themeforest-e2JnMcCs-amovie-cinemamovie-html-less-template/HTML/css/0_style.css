@@ -3,6 +3,7 @@
 
 .d-flex {display:flex;}
 .nav-link{margin-top:31px;}
+.footer-wrapper{margin-top:134px;}
 .footer-info{padding-top:31px;}
 .page-heading, .movie__time{font-weight:bold;}
 .btn--book, .btn--sign, .login .login__title{font-weight:bold;}
