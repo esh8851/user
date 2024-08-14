@@ -1,6 +1,5 @@
 .radio {width:13px;height:13px;border:1px solid #e0e4e6;display:block;clear:left;float:left;border-radius:3px;-moz-box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);-webkit-box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);box-shadow:inset 0px 1px 1px rgba(0, 0, 0, 0.1);background-image:url('../images/components/checked.png');background-position:0 0;margin-right:10px;margin-top:3px;}
 .copy{padding-bottom:0;}
-
 .d-flex {display:flex;}
 .nav-link{margin-top:31px;}
 .footer-wrapper{margin-top:134px;}
@@ -44,6 +43,7 @@
 .movie__feature a:before{top:22px !important;right:5px !important;}
 .movie--full .movie__feature .movie__feature-item{text-align:right;}
 .sbHolder{padding-top:1px;}
+.tags__label{font-weight:bold;}
 /******************************* concertList E *******************************/
 
 
@@ -55,15 +55,16 @@
 .pagination-leesh li a:hover span{color:#fe505a;transition:0.3s;}
 .pagination-leesh li:not(:last-child) a{border-right:0;}
 .pagination-leesh span{font:13px 'aleoregular', sans-serif;color:#4c4145;text-transform:uppercase;}
-
 .movie .movie__rating{padding-top:12px;}
 .choose-container .select .sbToggle:after{content:'도시';}
 .time-select__place, .comment-form__btn, .watchlist{font-weight:bold;}
-
 .movie .movie__btns .watchlist, .watchlist--map{padding-top:7px;}
 .movie .comment-link{font-weight:bold;}
 .movie .comment-link:after{bottom:-5px;}
+.swiper-slide{width:220px !important;}
+.movie .movie__rate .score{vertical-align:top;}
 /******************************* concertSingle E *******************************/
+
 
 /******************************* book S *******************************/
 .order .order__title, .order-step-area .first--step, .booking-pagination .arrow__text, .booking-pagination .arrow__info, .order-step-area .second--step, .order-step-area .order-step{font-weight:bold;}
